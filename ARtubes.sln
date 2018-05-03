@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARKit_Csharp", "ARKit_Csharp.csproj", "{9CA66181-B55C-44C3-8D39-9BC28BF305D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARtubes", "ARtubes.csproj", "{9CA66181-B55C-44C3-8D39-9BC28BF305D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
