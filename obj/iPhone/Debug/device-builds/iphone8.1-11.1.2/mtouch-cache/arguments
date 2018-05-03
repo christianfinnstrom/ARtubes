@@ -1,7 +1,7 @@
 # Version: 11.9.1.24 (xcode9.3: f62de472)
-# [first argument, ignore] # --cache=/Users/christianfinnstrom/Documents/GitHub/ARKit_CSharp/obj/iPhone/Debug/device-builds/iphone8.1-11.1.2/mtouch-cache
+# [first argument, ignore] # --cache=/Users/christianfinnstrom/Documents/GitHub/ARtubes/obj/iPhone/Debug/device-builds/iphone8.1-11.1.2/mtouch-cache
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.9.1.24/lib/mtouch/mtouch.exe \
-	--dev=/Users/christianfinnstrom/Documents/GitHub/ARKit_CSharp/bin/iPhone/Debug/device-builds/iphone8.1-11.1.2/ARKit_Csharp.app \
+	--dev=/Users/christianfinnstrom/Documents/GitHub/ARtubes/bin/iPhone/Debug/device-builds/iphone8.1-11.1.2/ARKit_Csharp.app \
 	--executable=ARKit_Csharp \
 	--fastdev \
 	--debug \
@@ -12,13 +12,13 @@
 	--aot-options=-O=float32 \
 	--http-message-handler=HttpClientHandler \
 	--abi=arm64 \
-	--symbollist=/Users/christianfinnstrom/Documents/GitHub/ARKit_CSharp/obj/iPhone/Debug/device-builds/iphone8.1-11.1.2/mtouch-symbols.list \
+	--symbollist=/Users/christianfinnstrom/Documents/GitHub/ARtubes/obj/iPhone/Debug/device-builds/iphone8.1-11.1.2/mtouch-symbols.list \
 	--dsym=no \
 	-r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
-	-r=/Users/christianfinnstrom/Documents/GitHub/ARKit_CSharp/packages/Xam.Plugin.Geolocator.4.2.0/lib/Xamarin.iOS10/Plugin.Geolocator.Abstractions.dll \
-	-r=/Users/christianfinnstrom/Documents/GitHub/ARKit_CSharp/packages/Xam.Plugin.Geolocator.4.2.0/lib/Xamarin.iOS10/Plugin.Geolocator.dll \
-	-r=/Users/christianfinnstrom/Documents/GitHub/ARKit_CSharp/packages/Plugin.Permissions.2.2.1/lib/Xamarin.iOS10/Plugin.Permissions.Abstractions.dll \
-	-r=/Users/christianfinnstrom/Documents/GitHub/ARKit_CSharp/packages/Plugin.Permissions.2.2.1/lib/Xamarin.iOS10/Plugin.Permissions.dll \
+	-r=/Users/christianfinnstrom/Documents/GitHub/ARtubes/packages/Xam.Plugin.Geolocator.4.2.0/lib/Xamarin.iOS10/Plugin.Geolocator.Abstractions.dll \
+	-r=/Users/christianfinnstrom/Documents/GitHub/ARtubes/packages/Xam.Plugin.Geolocator.4.2.0/lib/Xamarin.iOS10/Plugin.Geolocator.dll \
+	-r=/Users/christianfinnstrom/Documents/GitHub/ARtubes/packages/Plugin.Permissions.2.2.1/lib/Xamarin.iOS10/Plugin.Permissions.Abstractions.dll \
+	-r=/Users/christianfinnstrom/Documents/GitHub/ARtubes/packages/Plugin.Permissions.2.2.1/lib/Xamarin.iOS10/Plugin.Permissions.dll \
 	-r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
 	-r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
 	-r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll \
@@ -160,9 +160,9 @@
 	-r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.XPath.XDocument.dll \
 	-r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.XPath.XmlDocument.dll \
 	-r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.Xsl.Primitives.dll \
-	-r=/Users/christianfinnstrom/Documents/GitHub/ARKit_CSharp/packages/Xam.Plugin.Geolocator.4.2.0/lib/Xamarin.iOS10/Plugin.Geolocator.Abstractions.dll \
-	-r=/Users/christianfinnstrom/Documents/GitHub/ARKit_CSharp/packages/Xam.Plugin.Geolocator.4.2.0/lib/Xamarin.iOS10/Plugin.Geolocator.dll \
-	-r=/Users/christianfinnstrom/Documents/GitHub/ARKit_CSharp/packages/Plugin.Permissions.2.2.1/lib/Xamarin.iOS10/Plugin.Permissions.Abstractions.dll \
-	-r=/Users/christianfinnstrom/Documents/GitHub/ARKit_CSharp/packages/Plugin.Permissions.2.2.1/lib/Xamarin.iOS10/Plugin.Permissions.dll \
+	-r=/Users/christianfinnstrom/Documents/GitHub/ARtubes/packages/Xam.Plugin.Geolocator.4.2.0/lib/Xamarin.iOS10/Plugin.Geolocator.Abstractions.dll \
+	-r=/Users/christianfinnstrom/Documents/GitHub/ARtubes/packages/Xam.Plugin.Geolocator.4.2.0/lib/Xamarin.iOS10/Plugin.Geolocator.dll \
+	-r=/Users/christianfinnstrom/Documents/GitHub/ARtubes/packages/Plugin.Permissions.2.2.1/lib/Xamarin.iOS10/Plugin.Permissions.Abstractions.dll \
+	-r=/Users/christianfinnstrom/Documents/GitHub/ARtubes/packages/Plugin.Permissions.2.2.1/lib/Xamarin.iOS10/Plugin.Permissions.dll \
 	'--target-framework=Xamarin.iOS,v1.0' \
-	--root-assembly=/Users/christianfinnstrom/Documents/GitHub/ARKit_CSharp/bin/iPhone/Debug/ARKit_Csharp.exe \
+	--root-assembly=/Users/christianfinnstrom/Documents/GitHub/ARtubes/bin/iPhone/Debug/ARKit_Csharp.exe \

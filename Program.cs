@@ -97,8 +97,14 @@ public class ARDelegate : ARSCNViewDelegate
 
             _userPosition = await CrossGeolocator.Current.GetPositionAsync();
 
-            var markerPosition1 = new Position(59.903580, 10.776050);
-            var markerPosition2 = new Position(59.903627, 10.775577);
+            //////WORKS
+            //var markerPosition1 = new Position(59.903580, 10.776050);
+            //var markerPosition2 = new Position(59.903627, 10.775577);
+            //////
+            /// 
+
+            var markerPosition1 = new Position(59.903189, 10.775680);
+            var markerPosition2 = new Position(59.903429, 10.775554);
             var midPoint = CalculateMidpoint(markerPosition1, markerPosition2);
 
             var lengthTube = (float)markerPosition1.CalculateDistance(markerPosition2, GeolocatorUtils.DistanceUnits.Kilometers) * 1000;
@@ -108,13 +114,9 @@ public class ARDelegate : ARSCNViewDelegate
             var transformMatrix = TransformMatrix(midPoint);
             var translateVector = TranslateVector(transformMatrix);
             translateVector.Y = -20;
-            tubeNode.Position = new SCNVector3(0, -20, -30);//translateVector;
+            tubeNode.Position = translateVector; //new SCNVector3(0, -20, -30);
 
-			// Rotate tube so it lies with length in Z-axis (North/South). Middle of tube is in origo.
-			//tubeNode.Transform = SCNMatrix4.CreateRotationX((float)Math.PI / 2);
-			
-            // Move tube so that one end of tube is in origo
-            //tubeNode.Position = new SCNVector3(0, 0, lengthTube / 2);
+
 
             // Angle from north axis counterclockwise and markerposition1 to markerPosition2
             //      ^
@@ -125,8 +127,13 @@ public class ARDelegate : ARSCNViewDelegate
             var tubeBearing = CalculateBearing(markerPosition1, markerPosition2);
 
             var origTransform = tubeNode.Transform;
-            tubeNode.Transform = SCNMatrix4.Mult(origTransform, SCNMatrix4.CreateRotationY((float)Math.PI / 2));//(float)tubeBearing));
 
+            // Rotate tube so it lies with length in Z-axis (North/South). Middle of tube is in origo.
+            //var t = tubeNode.Transform;
+            var newTransform = SCNMatrix4.Mult(SCNMatrix4.CreateRotationX((float)Math.PI / 2), SCNMatrix4.CreateRotationY((float)tubeBearing));
+            tubeNode.Transform = SCNMatrix4.Mult(newTransform, origTransform);
+        
+            //tubeNode.Transform = SCNMatrix4.Mult(SCNMatrix4.CreateRotationY((float)Math.PI / 4), origTransform);//(float)tubeBearing));
             //cubeNode.Position = TranslateVector(transformMatrix);
 
             scnView.Scene.RootNode.AddChildNode(tubeNode);

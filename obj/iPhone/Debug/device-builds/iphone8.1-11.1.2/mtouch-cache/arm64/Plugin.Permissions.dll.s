@@ -31270,7 +31270,7 @@ _mono_aot_file_info:
 	.long 312,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 248,17,20,177,11,20,238,213,178,232,190,128,179,37,60,139
+	.byte 7,151,147,1,233,175,149,187,45,168,194,126,245,47,140,114
 	.globl _mono_aot_module_Plugin_Permissions_info
 	.align 3
 _mono_aot_module_Plugin_Permissions_info:
